@@ -16,3 +16,5 @@ tlsf_dep = declare_dependency(
     include_directories: tlsf_includes,
     link_with: tlsf_lib
 )
+
+meson.override_dependency('tlsf', tlsf_dep)
